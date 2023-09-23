@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "lol-app"
+version = "0.1.0"
+description = ""
+authors = ["Alexandr Obolonkov <itbolonkov2019@gmail.com>"]
+readme = "README.md"
+packages = [{include = "lol_app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = {extras = ["all"], version = "^0.103.1"}
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
